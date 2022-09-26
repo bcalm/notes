@@ -27,4 +27,15 @@ mcr.microsoft.com/mssql/server:2019-latest	This tells Docker which image to use.
     password: reallyStrongPwd123
     server: localhost
 
+6. Install SQLServerDriver dependency
+
+7. Spring connections:
+
+    spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=library;encrypt=false
+    username: sa
+    password: test@123
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
 

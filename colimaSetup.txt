@@ -1,0 +1,13 @@
+Steps to install Colima:
+
+brew install colima
+brew install docker
+brew install docker-compose
+
+To increase memory: colima start --cpu 4 --memory 12
+
+$$$:
+
+*error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: *
+In case you see the above mentioned error while running docker-compose up, Change credsStore to credStore in ~/.docker/config.json
+
